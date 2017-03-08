@@ -175,7 +175,7 @@
     self.circleLayer.strokeEnd = 0.75;
     [self.circleLayer addAnimation:keyAnimation forKey:nil];
 
-    [self.view.layer addSublayer:self.circleLayer];
+    [circleView.layer addSublayer:self.circleLayer];
     
     //画矩形
     UIColor *color = [UIColor redColor];
@@ -215,7 +215,7 @@
     lineLayer.path = linePath.CGPath;
     lineLayer.fillColor = nil;
     
-    [self.view.layer addSublayer:lineLayer]zhua
+    [self.view.layer addSublayer:lineLayer];
 }
 
 - (CGFloat)cubicEaseInOut:(CGFloat)number {
